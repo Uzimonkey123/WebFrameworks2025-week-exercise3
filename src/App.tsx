@@ -1,9 +1,12 @@
 import "./App.css";
+import CostCaculator from "./CostCalculator";
 
-function App() {
-  return <div className="App">
-    Write your solution here and remove this text
-  </div>;
+function App(props: {priceOfSingleVMPerHour: number}) {
+  return (
+    <>
+      <CostCaculator priceOfSingleVMPerHour={props.priceOfSingleVMPerHour}/>
+    </>
+  )
 }
 
 export default App;
